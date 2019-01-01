@@ -1,0 +1,6 @@
+.vscode
+bin
+obj
+#all db files
+*.db
+*.bak
