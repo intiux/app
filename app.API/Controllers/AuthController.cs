@@ -77,8 +77,11 @@ namespace app.API.Controllers
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
 
+            var rolex = "Juragan";
+
             return Ok( new {
-                token = tokenHandler.WriteToken(token)
+                token = tokenHandler.WriteToken(token),
+                rolex                 
             });
 
         }
